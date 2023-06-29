@@ -1,0 +1,261 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Pathway Extreme', sans-serif;
+}
+
+.header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 9%;
+    background: transparent;
+}
+
+.logo{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+
+
+.navlist{
+    display: flex;
+}
+
+.navlist li{
+    list-style: none;;
+}
+
+.navlist a{
+    text-decoration: none;
+    color: white;
+    margin-left:60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+
+.navlist a:hover{
+    border-bottom: 2px solid white;
+}
+
+#menu-icon{
+    color: white;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+.aboutme{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to right, #005c98, #505bda);
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+section{
+    padding: 0 19%;
+}
+
+.aboutme-image img{
+    border-radius: 50%;
+    width: 350px;
+    height: auto;
+}
+
+.aboutme-text h3{
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.aboutme-text h2{
+    color: white;
+    font-size: 100px;
+    line-height:1;
+    margin: 0 0 30px;
+}
+
+.aboutme-text a{
+    text-decoration: none;
+    display: inline-block;
+    color: #005c98;
+    background: white;
+    border: 1px solid transparent;
+    padding: 12px 30px ;
+    margin-left: 15px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all .55s ease;
+}
+
+.aboutme-text a:hover{
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+    transform: translateX(8px);
+}
+
+/* animacion de burbujas */
+.bubble1{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #fff;
+    opacity: .3;
+
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+
+    animation: bubbles 3s linear infinite;
+}
+
+.bubble2{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #fff;
+    opacity: .3;
+
+    position: absolute;
+    bottom: 0;
+    left: 29%;
+
+    animation: bubbles 4s  infinite;
+}
+
+.bubble3{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #fff;
+    opacity: .3;
+
+    position: absolute;
+    bottom: 0;
+    left: 65%;
+
+    animation: bubbles 3s linear infinite;
+}
+
+.bubble4{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #fff;
+    opacity: .3;
+
+    position: absolute;
+    bottom: 0;
+    left: 90%;
+
+    animation: bubbles 4s  infinite;
+}
+
+
+@keyframes bubbles{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    50%{
+        opacity: .2;
+    }
+    100%{
+        bottom: 80%;
+        opacity: 0;
+    }
+}
+
+
+
+.bubble5{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #005c98;
+    opacity: .3;
+
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+
+    animation: bubbles1 3s linear infinite;
+}
+
+.bubble6{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #005c98;
+    opacity: .3;
+
+    position: absolute;
+    bottom: 0;
+    left: 29%;
+
+    animation: bubbles1 4s  infinite;
+}
+
+.bubble7{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #005c98;
+    opacity: .3;
+
+    position: absolute;
+    bottom: 0;
+    left: 65%;
+
+    animation: bubbles1 3s linear infinite;
+}
+
+.bubble8{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #005c98;
+    opacity: .3;
+
+    position: absolute;
+    bottom: 0;
+    left: 90%;
+
+    animation: bubbles1 4s  infinite;
+}
+
+
+@keyframes bubbles1{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    50%{
+        opacity: .4;
+    }
+    100%{
+        bottom: 80%;
+        opacity: 0;
+    }
+}
+
+
