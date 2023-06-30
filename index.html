@@ -9,25 +9,42 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Agdasima&family=Chakra+Petch&display=swap" rel="stylesheet">
+    <!-- box icons -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!-- remix icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
     <title>Start</title>
 </head>
-<body>
+<body onload="cargar()">
+    <div id="sonidos"></div> 
     <div id="particles-js"></div>
-    <main class="hero" >
-        <div>   
-        <section class="bodyall ">
-            <div>
-                <h1 class="text-start">Bienvenido a mi portafolio web mi nombre es Duvan Rivera pero me puedes decir Duva<span>&#160;</span></h1>
-            </div>
-        </section>
-
-        <div class="btngo">
-            <a href="/home.html">Ver portafolio</a>
+    <main >
+        <!-- boton de Audio para pagina de bienvenida -->
+        <div class="audio">
+            <button onclick="optionSound()" type="button" class="btn-audio">
+                <i class='bx bxs-speaker'></i>
+                
+            </button>
         </div>
-    </div>
+
+        <!-- mensaje de binvenida portfolio -->
+        <div class="hero" >   
+            <div>
+                <section class="bodyall ">
+                    <div>
+                        <h1 class="text-start">Bienvenido a mi portafolio web mi nombre es Duvan Rivera pero me puedes decir Duva<span>&#160;</span></h1>
+                    </div>
+                </section>
+    
+                <div class="btngo">
+                    <a href="/home.html">Ver portafolio</a>
+                </div>
+            </div>
+        </div>
     </main> 
 </body>
 <!-- js -->
 <script src="assets/js/particles.min.js"></script>
 <script src="assets/js/configParticle.js"></script>
+<script src="assets/js/audio.js"></script>
 </html>

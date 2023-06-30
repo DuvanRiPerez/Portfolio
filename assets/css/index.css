@@ -82,9 +82,23 @@ a{
     
 }
 a:hover{
-    color: transparent;
+    opacity: 0.1;
+    color: white;
     background: transparent;
-    border: 1px solid transparent;
+    border: 1px solid white;
     transform: translateX(8px);
+}
+
+.audio{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.btn-audio{
+    background: transparent;
+    color: white;
+    border: 1px solid transparent ;
+    cursor: pointer;
 }
 
