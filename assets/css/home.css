@@ -261,3 +261,329 @@ section{
 }
 
 
+
+/* skills css "apartado sobre mis habilidades cartas con imagenes y animacion lottieJs" */
+section h1{
+    color: #005c98;
+    font-size: 50px;
+}
+
+section p{
+    color: #005c98;
+    font-size: medium;
+}
+
+.container{
+    padding: 12px 30px ;
+    padding-top: 8rem;
+    margin-left: 6rem;
+    padding-bottom: 8rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+.container h1{
+    text-align: center;
+}
+
+.container .imag{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:relative ;
+    flex-wrap: wrap;
+    gap: 20px 15px;
+    padding: 20px 15px;
+}
+
+
+.container-card .card{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    max-width: 100%;
+    height: 200px;
+    background: white;
+    border-radius: 20px;
+    transition: 0.5s;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+}
+
+.container-card .card img{
+    width: 100px;
+}
+
+.container-card .card .js{
+    width: 200px;
+}
+
+
+
+/* sobre mi "apartado con texto e imagenes sobre mi persona con animacion de wave"*/
+.main-about{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, #005c98, #505bda);
+    overflow: hidden;
+}
+
+.main-about .wave{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(../img/wave.png);
+    background-size: 1000px 100px;
+
+}
+
+.main-about .wave.wave1{
+    animation: animate1 14s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+}
+
+
+@keyframes animate1{
+    0%{
+        background-position-x: 0 ;
+    }
+    100%{
+        background-position-x: 1000px ;
+    }
+}
+
+
+.bodyall-about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container-about div h1{
+    color: white;
+    font-size: 50px;
+}
+
+.container-about div p{
+    color: white;
+    font-size: medium;
+}
+
+.container-about{
+    background: linear-gradient(to right, #005c98, #505bda);
+    padding: 12px 30px ;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    margin-left: 7rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+.container-about div img{
+    border: 5px double white;
+    border-radius: 20px;
+    width: 300px;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+}
+
+.container-about .imag{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container-list{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+
+
+/* Contactame "Circulos de redes sociales" */
+.container-about h3{
+    color: white;
+    margin: 1rem;
+}
+
+.circle-list{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.circle-list li{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow:0 2px 4px rgba(0, 0, 0, 0.2) ;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.circle-list li i{
+    color: #005c98;
+}
+
+.circle-list li:last-child{
+    margin-right: 0;
+}
+
+.container-list li:hover{
+    color: #fff;
+}
+
+.circle-list li:hover .tooltip{
+    opacity: 1;
+    animation: jump-in 0.3s ease-in-out forwards;
+}
+
+.circle-list li.facebook:hover,
+.circle-list li.facebook .tooltip{
+    background-color: #3b5998;
+    text-decoration: none;
+}
+
+.circle-list li.instagram:hover,
+.circle-list li.instagram .tooltip{
+    background: #f04433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1) ;
+    text-decoration: none;
+}
+
+.circle-list li.twitter:hover,
+.circle-list li.twitter .tooltip{
+    background-color: #00acee;
+    text-decoration: none;
+}
+
+.circle-list li.linkedin:hover,
+.circle-list li.linkedin .tooltip{
+    background-color: #4470cf;
+    text-decoration: none;
+}
+
+.circle-list li.github:hover,
+.circle-list li.github .tooltip{
+    background-color: #444;
+    text-decoration: none;
+}
+
+.circle-list li .tooltip{
+    font-size: 0.8rem;
+    position: absolute;
+    color: #fff;
+    padding: 3px 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    animation: jump-out 0.3s ease-in-out forwards;
+    transition: opacity 0.1s, top 0.3s;
+}
+
+.circle-list li .tooltip::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top:23px;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+.circle-list li.facebook .tooltip::after{
+    border-top-color: #3b5998;
+}
+
+.circle-list li.instagram .tooltip::after{
+    border-top-color: #f03333;
+}
+
+.circle-list li.twitter .tooltip::after{
+    border-top-color: #00acee;
+}
+
+.circle-list li.linkedin .tooltip::after{
+    border-top-color: #4470cf;
+}
+
+.circle-list li.facebook .tooltip::after{
+    border-top-color: #444;
+}
+
+.logo{
+    font-size: 1.5rem;
+}
+
+/* @keyframes jump-in{
+    0%{
+        top: -30px;
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    50%{
+        top: -30px;
+        opacity: 1;
+        transform: translateY(-10px);
+    }
+
+    100%{
+        top: -30px;
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes jump-out{
+    0%{
+        top: -30px;
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+    50%{
+        top: -30px;
+        opacity: 1;
+        transform: translateY(-10px);
+    }
+
+    100%{
+        top: -30px;
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
+ */
