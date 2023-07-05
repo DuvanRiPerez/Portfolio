@@ -19,16 +19,15 @@
     <main>
         <!-- Nombre curriculum  y video -->
         <!-- navbar -->
-        <div class="header">
+        <div  class="header">
 
-            
-            <a href="home.html" class="logo">DR</a>
+            <a id="header" href="home.html" class="logo">DR</a>
         
 
             
             <ul class="navlist">
-                <li><a href="aboutme.html">Sobre mi</a></li>
-                <li><a href="skills.html">Habilidades</a></li>
+                <li><a id="header" href="#aboutme">Sobre mi</a></li>
+                <li><a id="header" href="#skills">Habilidades</a></li>
             </ul>
 
 
@@ -63,11 +62,19 @@
         </div>
 
         
+        
         <!-- Habilidades o skills-->
-        <div class="bodyall">
+        <div id="skills" class="bodyall">
             <section class="container">
                 <div>
-                    <h1 class="title-skills">Habilidades</h1>
+
+                    <!-- <h1 class="title-skills">Habilidades</h1> -->
+                    <div style="display: flex ; justify-content: center; align-items: center;">
+                        <p class="section-title">
+                            <span>Habilidades</span>
+                        </p>
+                    </div>
+                    <!--  -->
                     <div class="container-card">
                         <div class="card" >
                             <img class="html" src="/assets/img/html.png" alt="logo html">
@@ -95,7 +102,7 @@
         </div>
 
         <!-- Sobre mi -->
-        <div class="main-about">
+        <div id="aboutme" class="main-about">
             <div class="bodyall-about">
                 <section class="container-about">
                     <div>
@@ -142,7 +149,8 @@
         </div>
     </main>
 </body>
-<script src = " https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js " ></script> 
+<script src = "https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js " ></script> 
 <script src="https://unpkg.com/scrollreveal"></script>
 <script src="/assets/js/animations.js"></script>
+<script src="assets/js/app.js"></script>
 </html>

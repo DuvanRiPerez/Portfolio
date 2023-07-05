@@ -20,6 +20,12 @@ window.sr = ScrollReveal()
 
     sr.reveal('.container-about', {
         duration: 3000,
-        origin: 'left',
+        origin: 'left   ',
+        distance: '-300px'
+    })
+
+    sr.reveal('.container-list', {
+        duration: 3000,
+        origin: 'top',
         distance: '-300px'
     })
